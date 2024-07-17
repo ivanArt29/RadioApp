@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_component"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.example.radio2.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_inner"
+            app:destination="@id/inner" />
+    </fragment>
+    <fragment
+        android:id="@+id/inner"
+        android:name="com.example.radio2.Inner"
+        android:label="fragment_inner"
+        tools:layout="@layout/fragment_inner" />
+</navigation>
